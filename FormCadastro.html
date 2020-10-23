@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/FomCadastro.css">
+    <link rel="icon" href="public/images/Octo_PNG_02_solo.png" />;
+    <title>Cadastra Paciente</title>
+
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Geral</legend>
+
+            <div class="input-block">
+                <label for="name">Nome</label>
+                <input id="name"  name="name" required >
+            </div>
+
+            <div class="input-block">
+                <label for="codigo">Codigo</label> <p>codigo do Paciente</p>
+                <input id="codigo"  name="name" required >
+            </div>
+
+            <div class="input-block">
+                <label for="name">Data de nasc.*</label>
+                <input type="date" id="name"  name="name" required >
+            </div>
+
+            <div class="sexo" >
+                <label for="name">Sexo*</label> <br>
+            
+                    <input type="radio" name="citizenship" /> <p>Feminino</p>
+	                <input type="radio" name="citizenship" /><p>Masculino</p>
+               
+            </div>
+
+            <div class="input-block">
+                <label for="name">E-mail</label>
+                <input type="email" id="email"  name="email" required >
+            </div>
+
+            <div class="input-block" >
+               <p>Cpf:</p> <input oninput="mascara(this)" type="text">
+            </div>
+
+            <div class="input-block" >
+                RG:    <input type="text" id="rg" oninput="Rg(v)" /><br/>
+         </div>
+         <div class="input-block">
+            <label for="Observações"> Observações</label>
+            <textarea id="Observações" type="text" name="Observações" required></textarea>
+        </div>
+   
+
+                
+        </fieldset>
+        <fieldset>
+            <legend>TELEFONES</legend>
+
+            <div class="input-block">
+                <label for="opening_hours">Celular*</label>
+                
+                 <input oninput="mascaranubem(this)" type="text"  placeholder="9999-9999 ou 9999-99999">
+            </div>
+
+            <div class="input-block">
+                <label for="opening_hours">Trabalho</label>
+                
+                 <input oninput="mascaranubem(this)" type="text"  placeholder="9999-9999 ou 9999-99999">
+            </div>
+
+            <div class="input-block">
+                <label for="opening_hours">Casa*</label>
+                
+                 <input oninput="mascaranubem(this)" type="text"  placeholder="9999-9999 ou 9999-99999">
+            </div>
+                
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>ENDEREÇO</legend>
+            <div class="input-block">
+                <label for="opening_hours">CEP</label>
+                <input oninput="mascara_cep(this)" type="text"  placeholder="_____-___" maxlength="1">
+            </div>
+
+            <div class="Endereço_style">
+
+                <div class="input-block">
+                    <label for="Endereço">Endereço</label>
+                    <input type="text" id="Endereço"  name="Endereço" required >
+                </div>
+
+
+                <div class="input-block">
+                    <label for="Complemento">Complemento</label>
+                    <input type="text" id="Complemento"  name="Complemento" required >
+                </div>
+
+                <div class="input-block">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" id="Cidade"  name="Cidade" required >
+                </div>
+
+            </div>
+           
+            <div>
+                <div class="input-block">
+                    <label for="Número">Número</label>
+                    <input type="number" id="Número"  name="Número" required >
+                </div>
+
+                <div class="input-block">
+                    <label for="Bairro">Bairro</label>
+                    <input type="Bairro" id="Bairro"  name="Bairro" required >
+                </div>
+
+
+
+            </div>
+            
+
+            
+
+            
+        </fieldset>
+        <footer>
+            <button type="submit" class="primary-button">
+                Confirmar
+                </button>
+
+
+            <button type="submit" class="primary-button">
+                Salvar e Adicionar Outro
+            </button>
+
+            <button type="submit" class="primary-button">
+                Salva e Continuar Editando
+            </button>
+    
+        </footer>
+    </form>
+    <script src="public/js/script.js"></script>
+</body>
+</html>
